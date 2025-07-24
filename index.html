@@ -42,12 +42,21 @@
     <!-- End Google Tag Manager -->
   </head>
 
-
   <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THVB8Q3" height="0" width="0"
         style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <div id="editor"></div>
 
-  <script src="lib.min.js"></script><script src="chunks/gui.js"></script></body>
+    <script src="lib.min.js"></script>
+    <script src="chunks/gui.js"></script>
+
+    <script>
+      // инициализация редактора
+      editor.init({
+        container: document.getElementById('editor')
+      });
+    </script>
+  </body>
 </html>
