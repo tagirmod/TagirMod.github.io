@@ -1,0 +1,121 @@
+.menu-bar {
+    height: 60px;
+    width: 100%;
+    background-color: var(--motion-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-bar_ul {
+    float: center;
+    margin-left: 50;
+}
+
+.menu-bar_li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 60px;
+}
+
+.menu-bar_li_left {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 60px;
+    position: absolute;
+    left: 0;
+}
+
+.menu-bar_a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+.menu-bar_a#languagesListToggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 45px;
+}
+
+.menu-bar_a#languagesListToggle img {
+    display: block;
+}
+
+.menu-bar_input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+#menubar_searchIcon {
+    font-size: 18px;
+    vertical-align: middle; /* Align the image vertically */
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.menu-bar.dark-mode {
+    background-color: var(--motion-primary-dark);
+}
+.menu-bar.dark-mode input[type="text"] {
+    color: white; /* Darker color for dark mode */
+    background-color: #333333; /* Darker color for dark mode */
+}
+.menu-bar.dark-mode #menubar_searchIcon {
+    color: white; /* Darker color for dark mode */
+    background-color: #333333; /* Darker color for dark mode */
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+.menu-bar_languages-dropdown {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: var(--motion-primary-menu);
+    border: 1px solid var(--motion-primary-menu);
+    top: 60px;
+    left: 0;
+    z-index: 10;
+}
+
+.menu-bar_languages-dropdown.dark-mode {
+    background-color: #333333;
+    border: 1px solid #333333;
+}
+  
+.menu-bar_languages-dropdown.visible {
+    display: block;
+}
+  
+.menu-bar_language-option {
+    padding: 4px 24px;
+    cursor: pointer;
+}
+  
+.menu-bar_language-option:hover {
+    background-color: var(--motion-primary);
+}
+
+.menu-bar_language-option.dark-mode {
+    background-color: #333333;
+    border: 1px solid #333333;
+}
+
+.menu-bar_language-option.dark-mode:hover {
+    background-color: var(--motion-primary-dark);
+}
+  
